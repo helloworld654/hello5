@@ -1,0 +1,4 @@
+create a clean keil project refer to st official files ./refe/st/
+
+refe blog:
+https://blog.csdn.net/cheapter/article/details/80198168?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164614151316780271592453%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164614151316780271592453&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-80198168.pc_search_result_control_group&utm_term=keil%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B&spm=1018.2226.3001.4187
