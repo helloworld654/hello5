@@ -10,6 +10,7 @@ user/main.c \
 user/stm32f10x_it.c \
 user/system_stm32f10x.c \
 hardware/src/usart.c \
+hardware/src/delay.c \
 
 # C includes
 C_INCLUDES =  \

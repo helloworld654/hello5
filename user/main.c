@@ -22,19 +22,17 @@
 #include "stm32f10x.h"
 #include <stdio.h>
 #include "usart.h"
+#include "delay.h"
 
 int main(void)
 {
   uint32_t i,j;
+  delay_init();
   uart1_init(115200);
   printf("uart init success\r\n");
   while (1)
   {
-    for(i=0;i<10000;i++){
-      for(j=0;j<1000;j++){
-      ;;
-      }
-    }
-    printf("hello wolrd 9898\r\n");
+    delay_lms(2000);
+    printf("hello wolrd dddd\r\n");
   }
 }
