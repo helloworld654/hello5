@@ -2,7 +2,9 @@ TARGET = make103
 BUILD_DIR = build
 
 C_SOURCES2 =  \
-cmsis/core_cm3.c \
+fwlib/src/misc.c \
+fwlib/src/stm32f10x_rcc.c \
+fwlib/src/stm32f10x_gpio.c \
 fwlib/src/stm32f10x_usart.c \
 user/main.c \
 user/stm32f10x_it.c \
@@ -22,8 +24,8 @@ LDSCRIPT = STM32F103C8Tx_FLASH.ld
 # LDSCRIPT = STM32F103ZETx_FLASH.ld
 # ASM sources
 ASM_SOURCES =  \
-cmsis/arm/startup_stm32f10x_md.s
-# startup_stm32f103xb.s 
+startup_stm32f103xb.s 
+# cmsis/arm/startup_stm32f10x_md.s
 # startup_stm32f103xe.s
 
 CFLAGS= -mcpu=cortex-m3 -mthumb -DSTM32F103xB -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -DAPP_DEBUG=0 $(C_INCLUDES)  -Wall -fdata-sections -ffunction-sections -lc -lm -lnosys  -g -gdwarf-2 -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)"
